@@ -13,13 +13,23 @@ public class Variable {
         System.out.println("My age is : " + age);
 
         int myMoney = 50000;
-        myMoney = 10000;
+        myMoney = 10000; // myMoney is updated
         System.out.println("My present money is : " + myMoney);
 
         final int myId = 1937820118;
         System.out.println("My id is : " + myId);
 
-        const int myBirthDate = 16;
-        System.out.println("My birthday is : " + myBirthDate + "November");
+        String num = "8";
+        System.out.println(num);
+        System.out.println(num + myId); // here just combine
+        
+        String person = "John";
+        System.out.println("Hello : " + person);
+
+
+        String firstName = person;
+        String lastName = " Doe";
+        System.out.println(firstName + lastName);
+
     }
 }
