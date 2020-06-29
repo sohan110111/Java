@@ -32,5 +32,36 @@ public class Operators {
         System.out.println(a /= 2); // 50 / 2 = 25
         System.out.println(a %= 2); // 25 % 2 = 1
 
+        // Now discussion bitwise operator 
+        int l = 5;
+        System.out.println(l &= 3); //(AND operation) Here, corresponding binary (0101 & 0011) = 0001 of corresponding decimal value is  1
+        System.out.println(l); // 1 => It given same output before and after statement before statement is called assignment operator
+        System.out.println(5 | 3); // (OR-Operation) (0101 | 0011 = 0111 of decimal value 7) in this way remind that one bit is true(1) that's called the resultant value is true
+        System.out.println(5 ^ 3); // (X-OR) (0101 ^ 0011 = 0110 of decimal value 6)
+        System.out.println(~5); // (NOT-Operation) two's complement notation : ~x = (-x) - 1; output : -6
+        System.out.println(5 >> 3); // (Bit right-shift) (0101 = 0.101 of decimal value 0)
+        System.out.println(5 << 3); // (Bit left-shift) (like 0101.000 = 101000 of decimal value 40)
+        System.out.println(1000000000 >> 2); // 25000000 here the value accept till integer or the widening type is not support 
+        //System.out.println(12345678934567 >> 2 ); // here integer number is too large or floating the integer size
+        //System.out.println(10.0 >> 2); // bad operand types for binary operator types : double
+        System.out.println((-1 >> 1)); //-1
+        // Now discussion Comparison Operators 
+        System.out.println(5 == 3); // false
+        System.out.println(5 != 3); // true
+        System.out.println(5 > 3); // true
+        System.out.println(5 < 3); // false
+        System.out.println(5 <= 3); // false
+        System.out.println(5 >= 3); // true
+
+        // Logical Operators
+        System.out.println(5 > 3 && 5 < 10); // true
+        System.out.println(5 < 3 || 5 < 2); // false
+        System.out.println(!(5 > 3 && 5 < 10)); // false
+
+        //Bitwise Zero fill right and left shift operator
+        System.out.println(1 >>> 1); // 0
+        System.out.println(-1 >>> 1); // 2147483647
+        
+
     }
 }
